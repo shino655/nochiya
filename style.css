@@ -1,0 +1,255 @@
+/* 全体の背景色 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e3e7eb;
+    text-align: center;
+}
+
+/* 上部のバナー部分 */
+.top-banner {
+    width: 100%;
+    text-align: center;
+    background-color: #efefef; /* 画像部分の背景色 */
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 黒い帯 */
+.black-band {
+    background-color: #343438; /* 黒色 */
+    width: 100%;
+    height: 70px; /* 縦幅を統一 */
+    box-shadow: 0px 5px 5px gray;
+}
+
+/* GIF画像のスタイル */
+#dynamic-gif {
+    max-width: 100%;
+    height: auto;
+    display: block; /* 中央揃え用 */
+    margin: 0 auto;
+}
+/* ナビゲーションバー */
+.navbar {
+    background-color: #343438; /* 黒い帯と統一 */
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* ナビゲーションのリスト */
+.nav-list {
+    list-style-type: none; /* リストマーカーを非表示 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 50px; /* タブ間のスペース */
+}
+
+/* 各ナビゲーションリンク */
+.nav-list li a {
+    text-decoration: none;
+    color: #fff; /* 白文字 */
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px 10px; transition: background-color 0.3s, color 0.3s;
+}
+
+/* ホバー時のエフェクト */
+.nav-list li a:hover {
+    background-color: #fff; /* 背景を白に */
+    color: #000; /* 文字を黒に */
+    border-radius: 5px;
+}
+@keyframes slide-in {
+    0% {
+        transform: translateX(-80%); /* 左端から開始 */
+    }
+    100% {
+        transform: translateX(0); /* 元の位置に移動 */
+    }
+}
+/* h1にアニメーションを適用 */
+.animated-heading {
+    display: inline-block; /* アニメーションのためにインラインブロック化 */
+    font-size: 40px; /* フォントサイズ */
+    font-weight: bold; /* 太字 */
+    transform: translateX(-100%); /* アニメーション前の位置 */
+    animation: slide-in 0.7s linear forwards; /* アニメーション設定 */
+    white-space: nowrap; /* 文字の折り返しを防ぐ */
+    overflow: hidden; /* アニメーションの余分な部分を隠す */
+    opacity: 0; /* 見えない状態からスタート */
+    transition: opacity 0.5s ease; /* スムーズな表示のためのトランジション */ 
+}
+/* アクティブ時にアニメーションを適用 */
+.animated-heading.animate {
+    transform: translateX(0); /* 元の位置に移動 */
+    opacity: 1; /* 表示する */
+    transition: transform 2s ease-out, opacity 0.5s ease;
+}
+
+h1{
+    display: block;
+    position:relative;
+    width: 140px;
+    height: 50px;
+    color: #ffffff;
+    text-align: center; 
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgb(33, 36, 38);
+    
+}
+h2{
+    display: block;
+    position:relative;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    padding:5px;
+    color: #ffffff;
+    text-align: center; 
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgb(33, 36, 38);
+    
+}
+h4{
+    display: block;
+    justify-content: center;
+    width: 140px;
+    height: 50px;
+    color: #ffffff;
+    margin-top: 200px;
+    text-align: center; 
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgb(33, 36, 38);
+    
+}
+h6{
+    display: block;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    color: #ffffff;
+    margin-top: 200px;
+    text-align: center; 
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgb(33, 36, 38);
+    
+}
+
+div.unko img{
+    margin-top: -240px;
+    width: 600px;
+    padding-left: 300px;
+}
+
+div.unko{
+    margin-top: 70px;
+    background-image: url(image5.png);
+    background-size: contain;
+    height: 1000px;
+}
+
+div.unpo{
+    display:flex;
+    display: block;
+    height: 200px;
+    box-shadow: 0px 5px 5px rgb(196, 196, 196);
+    text-align: center;
+    margin-left: 20%;
+    padding:20px;
+    width: 260px;
+    color: #343434;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+    
+div.ok{
+    display: block;
+    box-shadow: 0px 5px 5px rgb(140, 140, 140);
+    text-align: center;
+    padding: 20px;
+    color: #343434;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;   
+}
+
+.emphasis{
+    background-image: linear-gradient(rgba(0 0 0 / 0) 90%,
+    #6292bc 90%);
+
+}
+
+div.new{
+    margin-top: 90px;
+    justify-content: center;
+    padding: 100px;
+}
+h5.oshirase{
+
+    font-size: 24px; 
+    background-image:
+    repeating-linear-gradient(
+    90deg,
+    #86b6c2 0px, #86b6c2 12px, rgb(0 0 0/ 0) 12px, rgb(0 0 0/ 0)20px
+    );
+    background-size: 20px 2px;
+    /*線形グラデーションを指定したbackgroundの
+    サイズ*/
+    background-repeat: repeat-x; /*背景の繰り返し指定*/
+    background-position: center bottom;
+}
+footer {
+    background-color: #333; /* ダークな背景 */
+    color: #fff; /* 白い文字 */
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form div {
+    margin-bottom: 15px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    background-color: #007BFF; /* ボタンの青色 */
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3; /* ホバー時の濃い青 */
+}
